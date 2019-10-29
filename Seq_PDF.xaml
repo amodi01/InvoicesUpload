@@ -56,7 +56,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:WriteCell Cell="A1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="535.2,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="Customer ID" WorkbookPath="Invoices.xlsx" />
+    <ui:WriteCell Cell="A1" DisplayName="Write Cell for Excel" sap:VirtualizedContainerService.HintSize="535.2,116" sap2010:WorkflowViewState.IdRef="WriteCell_1" SheetName="Sheet1" Text="Customer ID" WorkbookPath="Invoices.xlsx" />
     <ui:WriteCell Cell="B1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="535.2,116" sap2010:WorkflowViewState.IdRef="WriteCell_2" SheetName="Sheet1" Text="Company Name" WorkbookPath="Invoices.xlsx" />
     <ui:WriteCell Cell="C1" DisplayName="Write Cell" sap:VirtualizedContainerService.HintSize="535.2,116" sap2010:WorkflowViewState.IdRef="WriteCell_3" SheetName="Sheet1" Text="Invoice Total" WorkbookPath="Invoices.xlsx" />
     <Assign DisplayName="Get List of Files" sap:VirtualizedContainerService.HintSize="535.2,60" sap2010:WorkflowViewState.IdRef="Assign_1">
@@ -192,7 +192,7 @@
                         <OutArgument x:TypeArguments="x:String">[comp]</OutArgument>
                       </ui:GetValue.Value>
                     </ui:GetValue>
-                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="383.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Invoice : &quot; +  TotalInvoiceAmt +&#xD;&#xA;Environment.NewLine + &quot;Customer : &quot; + custId +&#xD;&#xA;Environment.NewLine + &quot;Company Name : &quot; + comp]" />
+                    <WriteLine DisplayName="Write Line" sap:VirtualizedContainerService.HintSize="383.2,62.4" sap2010:WorkflowViewState.IdRef="WriteLine_1" Text="[&quot;Invoice : &quot; +  TotalInvoiceAmt +&#xA;Environment.NewLine + &quot;Customer : &quot; + custId +&#xA;Environment.NewLine + &quot;Company Name : &quot; + comp]" />
                   </Sequence>
                 </ActivityAction>
               </ui:WindowScope.Body>
